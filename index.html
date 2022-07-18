@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Soul Society Home Page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="font">
+    <link rel="preload" as="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <h1>Soul Society</h1>
+        </a>
+
+        <div class="search">
+            <input name="search" type="text" placeholder="Search Articles...">
+        </div>
+
+        <ul class="menu">
+            <li class="main-icons">
+                <a title="Home" href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.49a1 1 0 0 1 .386-.79l8-6.222a1 1 0 0 1 1.228 0l8 6.222a1 1 0 0 1 .386.79V20zm-2-1V9.978l-7-5.444-7 5.444V19h14z"/></svg>
+                </a>
+            </li>
+            <li class="main-icons">
+                <a title="All Articles" href="./articles.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM7 6h4v4H7V6zm0 6h10v2H7v-2zm0 4h10v2H7v-2zm6-9h4v2h-4V7z"/></svg>
+                </a>
+            </li>
+            <li class="search-btn">
+                <a title="Search" href="./articles.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <section class="hero-section">
+            <a href="https://www.pexels.com/">
+                <div class="hero-img-area"></div>
+                <div class="hero-body">
+                    <h3 class="title">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque?
+                    </h3>
+                    <span>Read More</span>
+                </div>
+            </a>
+        </section>
+
+        <section class="recent-posts">
+            <h1>Recent Posts</h1>
+            <div class="grid">
+                <div class="post">
+                    <a href="./articles/4-gadgets-under-500-that-are-actually-useful.html">
+                        <img src="images/post-1.jpg" alt="">
+                        <div class="post-body">
+                            <b>2 min read</b>
+                            <p>4 Gadgets Under ₹500 That Are Actually Useful!</p>
+                            <span>Reviews</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>Copyright © Soul Society - 2022</h2>
+    </footer>
+
+    <script>
+        const searchArea = document.querySelector('.search');
+        searchArea.addEventListener('click', function() {
+            window.location.href = "./articles.html";
+        });
+    </script>
+</body>
+</html>
